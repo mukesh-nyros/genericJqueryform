@@ -1,0 +1,43 @@
+body
+{
+padding:0px;
+margin:0px;
+position:relative;
+}
+
+.user_img {
+   background: white url("accept.png");
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 20px;
+
+}
+
+#main{
+position:relative;
+margin:0 auto;
+border:1px solid;
+width:900px;
+   }
+
+
+#header{
+ width:500px;
+ height:100px;
+}
+
+.field{
+   margin-left:80px;
+   width:500px;
+   height:100px;
+}
+.field1{
+   margin-left:80px;
+   width:700px;
+   height:300px;
+}
+.field2{
+   margin-left:80px;
+   width:500px;
+   height:50px;
+}

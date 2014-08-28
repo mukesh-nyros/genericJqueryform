@@ -1,0 +1,63 @@
+alert("welcome");
+var username1,password1,firstname1,lastname1,profilepicture1,day1,month1,year1,hobby,country,phone;
+
+function datauname(datauser)
+{
+username1=datauser;
+}
+
+function datapwd(datapaswd)
+{
+password1=datapaswd;
+}
+
+function datafname(datafirstname)
+{
+firstname1=datafirstname;
+}
+
+function datalname(datalastname)
+{
+lastname1=datalastname;
+}
+
+function datappic(datapicture)
+{
+profilepicture1=datapicture;
+}
+
+function dataday(datadobday)
+{
+day1=datadobday;
+}
+
+function datamonth(datadobmonth)
+{
+month1=datadobmonth;
+}
+
+function datayear(datadobyear)
+{
+year1=datadobyear;
+}
+
+function datahobby(datahobbie)
+{
+hobby=datahobbie;
+}
+
+function datacountry(datacont)
+{
+country=datacont;
+}
+
+function dataphone(datamobile)
+{
+phone=datamobile;
+}
+
+function datasubmitted()
+{
+alert("UserName:"+username1+"\n"+"Password:"+password1+"\n"+"FirstName:"+firstname1+"\n"+"LastName:"+lastname1+"\n"+"Day:"+day1+"\n"+"Month:"+month1+"\n"+"Year:"+year1+"\n"+"Hobbie:"+hobby+"\n"+"Countries:"+country+"\n"+"Mobile Number:"+phone+);
+}
+}

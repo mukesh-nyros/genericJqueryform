@@ -1,0 +1,227 @@
+text=[];password=[];email=[];checkbox=[];radio=[];files=[];select=[];count=0;count1=0;
+/* TextField Validation*/
+for(i=0;i<$('input').length;i++)
+{
+if($('input')[i].type =="text")
+{
+//alert($('input')[i].type+i);
+text.push($('input')[i]);
+}
+if($('input')[i].type =="password")
+{
+//alert($('input')[i].type+i);
+password.push($('input')[i]);
+}
+
+if($('input')[i].type =="file")
+{
+//alert($('input')[i].type+i);
+files.push($('input')[i]);
+}
+
+
+if($('input')[i].type =="radio")
+{
+//alert($('input')[i].type+i);
+radio.push($('input')[i]);
+}
+if($('input')[i].type =="checkbox")
+{
+//alert($('input')[i].type+i);
+checkbox.push($('input')[i]);
+}
+
+if($('input')[i].type =="email")
+{
+//alert($('input')[i].type+i);
+email.push($('input')[i]);
+}
+}
+
+
+for(i=0;i<$('select').length;i++)
+{
+//alert($('select')[i].id+i);
+select.push($('select')[i]);
+}
+
+
+function validation()
+{
+var t1=textboxvalidation();
+if(!t1)
+return false;
+var p1=passwordvalidation();
+if(!p1)
+return false;
+var r1=radiovalidation();
+if(!r1)
+return false;
+ var c1=checkboxvalidation();
+if(!c1)
+return false;
+var e1=emailvalidation();
+if(!e1)
+return false;
+
+alert("submit");
+return true;
+}
+
+
+
+
+
+
+/*TextFeild validation*/
+function textboxvalidation()
+{
+var reg = /^((?:[A-z]+)[a-zA-Z0-9]{5,8})$/;
+for(t=0;t<text.length;t++)
+{
+
+if($(text[t]).val()==""||$(text[t]).val().length<5||$(text[t]).val().length>8)
+{
+
+var msg= text[t].id+" "+"field is  should not be empty";
+	alert(msg);
+
+$(text[t]).focus();
+$(text[t]).select();
+return false;
+}
+else if(reg.test($(text[t]).val()) == false)
+   {	
+var msg= text[t].id+"field is  must be contains alphanumeric characters";
+	alert(msg);
+
+$(text[t]).focus();
+$(text[t]).select();
+        
+   return false;
+
+    }
+
+}
+return true;
+}
+
+
+
+/* Password Field validation*/
+function passwordvalidation()
+{
+var reg = /^[a-zA-Z0-9]{6}$/;
+for(t=0;t<password.length;t++)
+{
+
+if($(password[t]).val()=="")
+{
+
+var msg= password[t].id+" "+"field is  should not be empty";
+	alert(msg);
+
+$(password[t]).focus();
+$(password[t]).select();
+return false;
+}
+else if(reg.test($(password[t]).val()) == false)
+   {	
+var msg= password[t].id+"field is  must be contains  characters";
+	alert(msg);
+
+$(password[t]).focus();
+$(password[t]).select();
+        
+   return false;
+
+    }
+
+}
+return true;
+}
+
+
+/* Email feild validation*/
+function emailvalidation()
+{
+var reg= /^[a-zA-Z0-9]+[\@][a-zA-Z0-9]+[\.][a-zA-Z]{2,4}$/;
+for(t=0;t<email.length;t++)
+{
+
+if($(email[t]).val()==""||$(email[t]).val().length<10||$(email[t]).value.length>25)
+{
+
+var msg= email[t].id+" "+"field is  should not be empty";
+	alert(msg);
+
+$(email[t]).focus();
+$(email[t]).select();
+return false;
+}
+else if(reg.test($(email[t]).value) == false)
+   {	
+var msg= email[t].id+"field is  must be contains alphanumeric characters";
+	alert(msg);
+
+$(email[t]).focus();
+$(email[t]).select();
+        
+   return false;
+
+    }
+
+}
+return true;
+}
+
+
+
+
+/* CheckBox validation*/
+
+function checkboxvalidation()
+{
+count=0;
+for(t=0;t<checkbox.length;t++)
+{
+if($(checkbox[t]).is(":checked"))
+count++;
+}
+if(count==0)
+{
+alert("please check atleast one  checkbox");
+return false;
+
+}
+else 
+return true;
+}
+
+
+
+
+/* Radiobutttons validation*/
+function radiovalidation()
+{
+count1=0;
+//alert(radio[0].checked);
+//alert($(radio[0]).is(":checked"));
+for(t=0;t<radio.length;t++)
+{
+if($(radio[t]).is(":checked"))
+count1++;
+}
+if(count1==0)
+{
+alert("please check atleast one radiobutton");
+return false;
+
+}
+else 
+return true;
+}
+
+
+
+

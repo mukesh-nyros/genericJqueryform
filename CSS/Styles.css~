@@ -1,0 +1,158 @@
+
+/*@font-face
+{ 
+  font-family:MarketingScript;
+  src:url('../fonts/MarketingScript.ttf');
+     
+}
+*/
+p#success
+{
+display:none;
+width:700px;
+height:50px;
+background-color:#C4E2D3;
+margin:auto;
+margin-bottom:10px;
+margin-top:10px;
+border-radius:12px;
+color:white;
+text-align:center;
+	
+}
+
+/*#header1
+{
+   position:relative;
+   margin:0 auto;
+   width:500px;
+   height:50px;
+   background-color:black;
+   border-radius:0px;
+   padding-top: 15px;
+   padding-left: 10px;
+   margin-bottom: 20px;
+   display:none;
+}*/
+
+
+body
+{
+   padding:0px;
+   margin:0px;
+   position:relative; 
+background-color:azure;
+    
+}
+
+.user_img 
+{
+   background:  url("../images/user.png");
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 20px;
+
+}
+
+
+.key_img 
+{
+   background:  url("../images/key.png");
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 20px;
+
+}
+progress
+{
+   /*position: relative;
+   margin-top: 40px;*/
+   width: 800px;
+   height: 30px;
+  border:0px;
+background-color:white;
+  
+}
+/*
+h3
+{
+   color:#8B008B;
+   font-family:MarketingScript;
+   font-style: italic;
+   font-size: 30px;
+}
+*/
+fieldset
+{
+width:700px;
+margin:auto;
+padding:20px;
+}
+#main
+{
+
+   position:relative;
+   margin:0 auto;
+   /*background-color:   #00CED1;
+   width:600px;*/
+   /*border:1px solid ;*/
+   /*border-radius:25px;*/
+   border-color: #006400;
+   /*border-width: 5px;*/
+   /*box-shadow: 10px 10px  #F5F5F5;*/
+
+}
+#main .main2
+{
+border:1px solid;
+width:900px;
+height:800px;
+margin:auto;
+}
+#header
+{
+   width:70px;
+   height:100px;
+}
+
+/*.field
+{
+  
+   border-left: 0px;
+   border-right: 0px;
+   border-bottom: 0px;
+   border-top-color:#006400;
+   height:100px;
+}
+*/
+/*.field1
+{
+
+   border-left: 0px;
+   border-right: 0px;
+   border-bottom: 0px;
+   border-top-color:#006400;
+   height:250px;
+}*/
+/*
+.field2
+{
+   
+   border-left: 0px;
+   border-right: 0px;
+   border-bottom: 0px;
+   height:50px;
+   border-top-color:#006400;
+}
+*/
+.sub
+{
+   float:right;
+    width:100px;
+    height: 30px;
+}
+
+.leg
+{
+    color:blue;
+}
